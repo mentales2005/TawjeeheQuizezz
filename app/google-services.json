@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "721710108275",
+    "firebase_url": "https://eduction-subjects.firebaseio.com",
+    "project_id": "eduction-subjects",
+    "storage_bucket": "eduction-subjects.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:721710108275:android:03ecba456c9300ec",
+        "android_client_info": {
+          "package_name": "ps.projects.foxy.tawjeehequizezz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "721710108275-gnbugu45sc11ocuacl2dmkdn4thjchod.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHCRAKpsPsHMAbxC8Uok4T7pdyy25Ee18"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "721710108275-gnbugu45sc11ocuacl2dmkdn4thjchod.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
