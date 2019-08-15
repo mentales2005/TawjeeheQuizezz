@@ -2,13 +2,17 @@ package ps.projects.foxy.tawjeehequizezz.Main;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -28,6 +32,7 @@ import ps.projects.foxy.tawjeehequizezz.R;
 public class MainActivity extends AppCompatActivity {
     public DatabaseReference databaseRef;
     Local_Save save;
+    TextView title;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +43,16 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.setThreadPolicy(policy);
 
        databaseRef=FirebaseDatabase.getInstance().getReference("Tawjehee");
+       title=findViewById(R.id.title_text);
+
+        Typeface typeface = ResourcesCompat.getFont(MainActivity.this, R.font.aldhabi);
+        title.setTypeface(typeface);
 
         new myAsnk().execute();
 
 
-        Button select_page=findViewById(R.id.next);
-        Button exit=findViewById(R.id.exit);
+        LinearLayout select_page=findViewById(R.id.next);
+        LinearLayout exit=findViewById(R.id.exit);
 
 
         select_page.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity.this,Select_Screen.class);
                 startActivity(intent);
+                finish();
             }
         });
 
@@ -71,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(DatabaseReference... databaseReferences) {
 
 
-            databaseRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            databaseRef.addValueEventListener(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     save=new Local_Save();

@@ -4,36 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:padding="16dp"
     tools:context=".Main.MainActivity">
 
     <LinearLayout
+        android:weightSum="10"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="center"
         >
 
-        <Button
-            android:id="@+id/next"
+        <TextView
+            android:id="@+id/title_text"
+            android:padding="5dp"
+            android:drawableTop="@drawable/ic_title"
+            android:textDirection="rtl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/next"
             android:layout_weight="1"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:typeface="normal" />
+            android:text="@string/twjeeh"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="50sp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/titles_circle"/>
 
-        <Button
+ <LinearLayout
+     android:id="@+id/next"
+     android:background="@drawable/button_color"
+     android:layout_weight="0.3"
+     android:gravity="center"
+     android:orientation="horizontal"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+
+     <TextView
+         android:background="@color/trans"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/next"
+         android:textAllCaps="false"
+         android:textColor="#FFFFFF"
+         android:textSize="25sp"
+         android:textStyle="bold"
+         android:typeface="normal"
+         />
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:src="@drawable/ic_play_arrow_green_24dp"/>
+
+
+
+
+ </LinearLayout>
+
+
+        <LinearLayout
             android:id="@+id/exit"
-            android:layout_weight="1"
+            android:background="@drawable/button_color"
+            android:layout_weight="0.3"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/exit"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:typeface="normal"
-            android:textAllCaps="false" />
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:background="@color/trans"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exit"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                android:textAllCaps="false" />
+
+
+            <ImageView
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/exit"/>
+
+
+        </LinearLayout>
+
+
+
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

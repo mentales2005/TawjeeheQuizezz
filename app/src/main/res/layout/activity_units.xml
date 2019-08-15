@@ -5,14 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="@drawable/back"
+    android:padding="16dp"
     android:gravity="center"
     tools:context=".Main.Units">
 
-
-    <ListView
-        android:id="@+id/holder"
+    <LinearLayout
+        android:weightSum="10"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"></ListView>
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/units_name"
+            android:drawableTop="@drawable/ic_languages"
+            android:textDirection="rtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="35sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/titles_circle"/>
+
+        <ListView
+            android:layout_marginTop="5dp"
+            android:layout_weight="7"
+            android:id="@+id/holder"
+            android:scrollbars="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"></ListView>
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

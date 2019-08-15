@@ -1,7 +1,15 @@
 <resources>
-    <string name="app_name">Tawjeehe Quizezz</string>
-    <string name="yes">Yes</string>
+    <string name="app_name">مسابقة التربية الاسلامية(توجيهي)</string>
+    <string name="yes">نعم</string>
     <string name="finish">النهاية</string>
-    <string name="next">Next</string>
-    <string name="exit">Exit</string>
+    <string name="next">بدأ اللعبة</string>
+    <string name="exit">خروج</string>
+    <string name="finished">لقد انهيت هذه المرحلة, أحسنت !!</string>
+    <string name="retray">ذهاب الي مرحلة جديد</string>
+    <string name="errors">سجل الاخطاء</string>
+    <string name="main">رجوع للقائمة الرئيسية</string>
+    <string name="done">موافق</string>
+    <string name="back">الرئيسية</string>
+    <string name="twjeeh">مبحث التربية الاسلامية توجيهي</string>
+    <string name="units">وحدات التربية الاسلامية توجيهي</string>
 </resources>

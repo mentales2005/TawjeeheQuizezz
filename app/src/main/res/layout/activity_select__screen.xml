@@ -4,69 +4,111 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:padding="16dp"
     tools:context=".Main.Select_Screen">
 
     <LinearLayout
+
+        android:weightSum="10"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
         android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/unit_text"
+            android:padding="5dp"
+            android:drawableTop="@drawable/ic_book"
+            android:textDirection="rtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/units"
+            android:gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="45sp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/titles_circle"/>
 
         <Button
+            android:drawableRight="@drawable/ic_left_arrow"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_color"
+            android:textColor="#FFFFFF"
             android:id="@+id/hadeeth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.1"
             android:text="الحديث النبوي الشريف"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <Button
+            android:drawableRight="@drawable/ic_left_arrow"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_color"
+            android:textColor="#FFFFFF"
             android:id="@+id/seera"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.1"
             android:text="السير و التراجم"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <Button
+            android:drawableRight="@drawable/ic_left_arrow"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_color"
+            android:textColor="#FFFFFF"
             android:id="@+id/ageeda"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.1"
             android:text="العقيدة"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <Button
+            android:drawableRight="@drawable/ic_left_arrow"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_color"
+            android:textColor="#FFFFFF"
             android:id="@+id/fagha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.1"
             android:text="الفقه"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <Button
+            android:drawableRight="@drawable/ic_left_arrow"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_color"
+            android:textColor="#FFFFFF"
             android:id="@+id/morle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.1"
             android:text="الفكر و الأخلاق"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
 
         <Button
+            android:drawableRight="@drawable/ic_left_arrow"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_color"
+            android:textColor="#FFFFFF"
             android:id="@+id/quran"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.1"
             android:text="وحدة القرآن الكريم وعلومه"
-            android:textSize="20sp" />
+            android:textSize="24sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

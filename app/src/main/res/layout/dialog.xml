@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:weightSum="10"
+    android:padding="32dp"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:padding="10dp"
+        android:drawableTop="@drawable/ic_flag"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:background="@drawable/question_table"
+        android:textSize="20sp"
+        android:text="@string/finished"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:padding="10dp"
+        android:drawableRight="@drawable/ic_replay"
+        android:id="@+id/again"
+        android:text="@string/retray"
+        android:background="@drawable/button_color"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_weight="0.1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:padding="10dp"
+        android:drawableRight="@drawable/ic_vademecum"
+        android:id="@+id/history"
+        android:background="@drawable/button_color"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.1"
+        android:text="@string/errors"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:padding="10dp"
+        android:drawableRight="@drawable/ic_homepage"
+        android:id="@+id/main_menu"
+        android:background="@drawable/button_color"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.1"
+        android:textSize="20sp"
+        android:text="@string/main"
+        android:textColor="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
